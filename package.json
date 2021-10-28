@@ -1,0 +1,10 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "small todo app with clear completed and clear all options",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfonso",
+  "license": "ISC"
+}

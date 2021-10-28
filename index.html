@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Andika&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Barlow&amp;display=swap"
+    />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header
+      class="
+        d-flex d-xl-flex
+        justify-content-center
+        align-items-center
+        justify-content-xl-center
+        align-items-xl-center
+      "
+    >
+      <div class="container header_container">
+        <div class="row">
+          <div class="col-10">
+            <input
+              class="form-control-sm item"
+              type="text"
+              placeholder="What needs to be done today?"
+            />
+          </div>
+          <div
+            class="
+              col-2
+              d-flex d-lg-flex d-xl-flex
+              justify-content-center
+              align-items-center
+              justify-content-lg-center justify-content-xl-center
+              align-items-xl-center
+            "
+          >
+            <button
+              class="
+                btn
+                d-xl-flex
+                justify-content-xl-center
+                align-items-xl-center
+              "
+              id="add"
+              type="submit"
+            >
+              <i class="fa fa-plus d-flex justify-content-center"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="container-fluid d-flex flex-column flex-grow-1"
+      id="todoContainer"
+    >
+      <ul id="todo" class="todo"></ul>
+      <hr />
+      <ul id="completed" class="todo"></ul>
+    </div>
+    <div
+      class="container d-flex justify-content-evenly align-items-center"
+      id="deleteAllContainer"
+    >
+      <button
+        class="btn btn-light btn_clear_completed"
+        id="deleteAll"
+        type="button"
+      >
+        Clear Completed
+      </button>
+
+      <button
+        class="btn btn-light btn_clear_everything"
+        id="deleteAll"
+        type="button"
+      >
+        Clear Everything
+      </button>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/script.js"></script>
+  </body>
+</html>
+
+<!-- for future reference only: li ->
+
+<li class="flex-grow-1">
+          <div class="btnsCont" id="buttons">
+            <button
+              class="
+                btn btn-light
+                d-flex
+                float-end
+                justify-content-center
+                align-items-center
+                checkBtn
+              "
+              id="checkBtn"
+              type="button"
+            >
+              <i
+                class="fa fa-check d-flex"
+                style="margin-bottom: 3px; margin-right: 1px"
+              ></i></button
+            ><button
+              class="
+                btn btn-light
+                d-flex
+                float-end
+                justify-content-center
+                align-items-center
+                trashBtn
+              "
+              id="trashBtn"
+              type="button"
+            >
+              <i
+                class="fa fa-trash d-flex"
+                style="margin-bottom: 3px; margin-right: 1px"
+              ></i>
+            </button>
+          </div>
+          Item 1
+        </li> -->

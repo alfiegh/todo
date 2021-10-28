@@ -1,0 +1,146 @@
+body {
+  font-family: Barlow, sans-serif;
+  background: #c8d0f9;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: #64ddf8;
+  box-shadow: 0px 2px 4px rgba(129, 93, 164, 0.9);
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  box-shadow: 2px 2px 4px #818181;
+  border-style: none;
+  border-radius: 5px;
+}
+
+button {
+  height: 40px;
+  width: 80%;
+  box-shadow: 2px 2px 4px #5c5c5c;
+}
+
+.fa.fa-plus {
+  color: rgb(73, 232, 60);
+  text-shadow: 2px 2px 4px rgb(56, 125, 50);
+  font-size: 20px;
+}
+
+#add {
+  background: #509a65;
+}
+
+button:focus(:focus-visible) {
+  outline: none;
+}
+
+.todo {
+  margin-top: 10px;
+}
+
+li {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  list-style-type: none;
+  background: rgba(245, 241, 241, 0.8);
+  box-shadow: 2px 2px 4px rgba(33, 37, 41, 0.7);
+  margin-left: -30px;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-top: 3px;
+  min-height: 2rem;
+  height: fit-content;
+  max-height: 6rem;
+  overflow: scroll;
+}
+
+#deleteAll {
+  width: 100px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border-style: none;
+  background: rgba(255, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  height: auto;
+}
+
+.fa.fa-check {
+  /* margin-right: 5px; */
+  margin-top: 3px;
+  color: rgb(36, 111, 30);
+}
+
+.fa.fa-trash {
+  margin-top: 3px;
+  /* margin-right: 5px; */
+  color: rgb(232, 47, 65);
+}
+
+.fa.fa-check-circle {
+  display: flex;
+  margin-bottom: 3px;
+  margin-right: 1px;
+  color: rgb(37, 111, 30);
+  font-size: 20px;
+  margin-top: 3px;
+}
+
+.checkBtn {
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: 5px;
+  background: rgb(192, 214, 193);
+  border-style: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
+  display: flex !important;
+  float: right;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.trashBtn {
+  width: 2rem;
+  height: 1.5rem;
+  margin-right: 6px;
+  background: rgb(241, 203, 207);
+  border-style: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 0.25rem;
+  display: flex !important;
+  float: right;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.btnsCont {
+  display: flex;
+  float: right;
+  justify-content: flex-end;
+}
+
+hr:not([size]) {
+  height: 5px;
+}
+
+ul.todo#todo:empty:after {
+  content: 'Add some tasks!';
+  margin: 15px 0 0 0;
+}
+
+ul.todo#completed:empty:after {
+  content: 'No tasks yet completed';
+}
+
+ul.todo#todo:after,
+ul.todo#completed:after {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+}
