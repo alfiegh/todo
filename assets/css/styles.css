@@ -1,13 +1,15 @@
 body {
   font-family: Barlow, sans-serif;
-  background: #c8d0f9;
+  background: #dddd82;
+  padding: 1rem;
 }
 
 header {
   width: 100%;
   height: 10vh;
-  background: #64ddf8;
-  box-shadow: 0px 2px 4px rgba(129, 93, 164, 0.9);
+  background: #cfb87b;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
 }
 
 input {
@@ -15,23 +17,24 @@ input {
   height: 40px;
   box-shadow: 2px 2px 4px #818181;
   border-style: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 button {
   height: 40px;
   width: 80%;
   box-shadow: 2px 2px 4px #5c5c5c;
+  border-radius: 10px;
 }
 
 .fa.fa-plus {
-  color: rgb(73, 232, 60);
-  text-shadow: 2px 2px 4px rgb(56, 125, 50);
+  color: rgb(212, 156, 238);
+  /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
   font-size: 20px;
 }
 
 #add {
-  background: #509a65;
+  background: rgb(70, 15, 95);
 }
 
 button:focus(:focus-visible) {
@@ -58,11 +61,21 @@ li {
   overflow: scroll;
 }
 
+#deleteCompleted {
+  width: 100px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  border-style: none;
+  background: rgb(36, 111, 30);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  height: auto;
+}
+
 #deleteAll {
   width: 100px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   border-style: none;
-  background: rgba(255, 0, 0, 0.5);
+  background: rgba(232, 47, 65);
   color: rgb(0, 0, 0);
   font-weight: bold;
   height: auto;
